@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;   
+    box-sizing: border-box;
+}
+body{
+    color: #ededed;  
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a
+{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover
+{
+    color: #0ef;
+}
+.home
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+   /* background: url(profile.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.passport-photo {
+    width: 200px; /* Adjusted size to be a bit larger */
+    height: 200px;
+    position: absolute;
+    top: 180px; /* Adjust as needed */
+    left: 120px; /* Adjust as needed */
+    border-radius: 50%; /* This makes the image round */
+    object-fit: cover; /* Ensures the image covers the space nicely without stretching. Might need to adjust width and height equally for a perfect circle */
+}
