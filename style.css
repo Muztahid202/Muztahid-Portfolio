@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
@@ -288,6 +289,237 @@ section
 .coding-gif img {
     max-width: 100%; /* Makes the GIF responsive */
     height: auto; /* Maintains the aspect ratio of the GIF */
+}
+.projects {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    display: flex; /* Make the project a flex container */
+    flex-direction: column; /* Arrange children (image, text, button) in a column */
+    justify-content: space-between; /* Distribute space between and around content items */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.333% - 40px); /* Adjusting for gap */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
+    height: 100%; /* Ensure all project cards have the same height */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Enlarge the box */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Optional: Increase shadow for more depth */
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project h3, .project p {
+    margin: 10px;
+}
+
+.project p {
+    text-align: left;
+    flex-grow: 1; /* Allows the paragraph to expand and push the button down */
+}
+
+.project-link {
+    display: block; /* Make the link fill the width of its container */
+    margin: 20px auto; /* Center the button horizontally */
+    background-color: #0ef;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    width: auto; /* Adjust width as needed */
+}
+.view-project-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 0 5px #0ef,
+                0 0 25px #0ef,
+                0 0 50px #0ef; /* Initial state shadow */
+    cursor: pointer; /* Changes cursor to pointer on hover for better UX */
+}
+
+.view-project-btn:hover {
+    box-shadow: 0 0 10px #0ef,
+                0 0 40px #0ef,
+                0 0 80px #0ef; /* Enhanced glow on hover */
+    color: #fff; /* Optional: Change text color on hover */
+}
+.contact
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    padding-right: 130px;
+}
+.contact-text h2
+{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+}
+.contact-text h2 span
+{
+    color: #0ef;
+}
+.contact-text p
+{
+    color: rgb(177,177,177);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.contact-list
+{
+    margin-bottom: 3rem;
+}
+.contact-list li
+{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list i
+{
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.40s ease;
+}
+.contact-list li a:hover
+{
+    transform: scale(1.01) translateY(-5px);
+    color: #0ef;
+}
+.contact-icons i
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s* var(--i));
+}
+.contact-icons i:hover
+{
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+}
+.contact-form form
+{
+    position: relative;
+}
+.contact-form form input,form textarea
+{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 10px;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-form textarea
+{
+   resize: none;
+   height: 220px; 
+} 
+.contact-form form .send
+{
+    display: inline-block;
+    padding: 14px 20px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+.contact-form form .send:hover
+{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.last-text p
+{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(7,85,91);
+    font-weight: 300;
+    margin-top: 70px;
+}
+.top 
+{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2,1rem;
+}
+.top i
+{
+    color: #000;
+    background: #0ef;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+@media (max-width: 768px) {
+    .project {
+        width: calc(50% - 40px); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        width: calc(100% - 40px); /* Full width on very small screens */
+    }
 }
 
 /* Since you're using flexbox, the specific margin-top adjustments may not be as necessary. 

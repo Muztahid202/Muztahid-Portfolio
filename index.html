@@ -12,34 +12,35 @@
     </head>
     <body>
         <header class = "header">
-            <a href = "#" class = "logo">Portfolio</a>
+            <a href = "#home" class = "logo">Portfolio</a>
 
             <nav class="navbar">
-                <a href="#" style="--i:1"class="active" >Home </a> 
-                <a href="#" style="--i:2">About </a>
-                <a href="#" style="--i:3">Skill</a>
-                <a href="#" style="--i:4">Projects</a>
-                <a href="#" style="--i:5">Contact</a>
+                <a href="#home" style="--i:1"class="active" >Home </a> 
+                <a href="#about" style="--i:2">About </a>
+                <a href="#myskills" style="--i:3">Skill</a>
+                <a href="#projects" style="--i:4">Projects</a>
+                <a href="#contact" style="--i:5">Contact</a>
             </nav>
         </header>
-        <section class="home">
+        <section class="home" id="home">
             <div class="home-content">
                 <img src="profile.jpg" alt="Masnoon Muztahid" class="passport-photo">
                 <h3>Hello, It's Me</h3>
                 <h1>Masnoon Muztahid</h1>
                 <h3> And I'm a <span class="text"></span></h3>
-                <p>I'm currently studying in Computer Science and Engineering in Bangladesh University of Engineering and Technology</p>
+                <p>I'm currently studying in Computer Science and Engineering at Bangladesh University of Engineering and Technology</p>
                 <div class="home-sci">
-                    <!-- Social links or additional content here -->
-                    <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" style="--i:8"><i class='bx bxl-github'></i></a>
-                    <a href="#" style="--i:9"><i class='bx bxl-linkedin'></i></a>
+                    <!-- Social links -->
+                    <a href="https://www.facebook.com/profile.php?id=100013720121790" style="--i:7" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://github.com/Muztahid202" style="--i:8" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/masnoon-muztahid-0389bb2b8" style="--i:9" target="_blank"><i class='bx bxl-linkedin'></i></a>
                 </div>
-                <!-- Here I will put the link to download my cv/resume -->
-                <a href="#" class="btn-box">More About Me</a>
+                <!-- Link to download your CV or more about you -->
+                <a href="your_cv_link.pdf" class="btn-box">More About Me</a>
             </div>
             <span class="home-imgHover"></span>
         </section>
+        
 
         <section class="about" id="about">
             <div class = "about-img">
@@ -56,9 +57,9 @@
             <a href="#" class="btn-box">More About Me</a>
            </div> 
         </section>
-        <h1 class="sub-title">My <span>Skills</span></h1>
+        <h1 class="sub-title" id="myskills">My <span>Skills</span></h1>
 
-        <section>
+        <section >
             <div class="container1" id="Skills">
                 <h1 class="heading1">Technical Skills</h1>
                 <div class="Technical-bars">
@@ -109,14 +110,61 @@
                 <img src="coding-good.gif" alt="Coding Cartoon">
             </div>
         </section>
+        <section class="projects" id="projects">
+            <h2>Latest Projects</h2>
+            <div class="project-container">
+                <div class="project">
+                    <img src="Auction.png" alt="Online Sports Auction System">
+                    <h3>Online Sports Auction System</h3>
+                    <p>This project manages the entire bidding process online, utilizing Oracle database, React, and Node.js.</p>
+                    <!-- Updated class name for glowing effect -->
+                    <a href="#" class="project-link view-project-btn">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="Movies.jpg" alt="Movie Database">
+                    <h3>Movie Database</h3>
+                    <p>An expansive database of movies, featuring detailed information and user reviews. Built with MongoDB, Express.js, and Node.js.</p>
+                    <!-- Updated class name for glowing effect -->
+                    <a href="#" class="project-link view-project-btn">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="Wordle.jpg" alt="Wordle Clone">
+                    <h3>Wordle Clone</h3>
+                    <p>A clone of the popular word game Wordle, developed with HTML, CSS, and JavaScript for web browsers.</p>
+                    <!-- Updated class name for glowing effect -->
+                    <a href="#" class="project-link view-project-btn">View Project</a>
+                </div>
+            </div>
+        </section>
+       <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2>Contact <span>Me</span></h2>
+                <p>If you have any queries or want to know more about me, feel free to contact me. I am always ready to help you.</p>
+                <div class="contact-list">
+                    <li><i class='bx bx-send' style='color:#4becdd' ></i>masnoon312@gmail.com</li>
+                </div>
+                <div class="contact-icons">
+                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='bx bxl-twitter' style='color:#02a7f4'></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square' style='color:#0e76a8'></i></a>
+                </div>
+            </div>
 
+            <div class="contact-form">
+                <form action="">
+                    <input type="" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your Email" required>
 
-
-
-
-
-
-
+                    <input type="" placeholder="Enter Your Subject">
+                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                    <input type="submit" value="Submit" class="send">
+                </form>
+            </div>
+       </section>
+       <div class="last-text">
+        <p>Thanks for visiting my page.Wish you a great day ahead</p>
+       </div>
+       <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
         <script src="main.js"></script>
     </body>
 </html>
