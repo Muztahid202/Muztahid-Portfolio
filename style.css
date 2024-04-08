@@ -323,7 +323,8 @@ section
 
 .project img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area, might crop it */
     display: block;
 }
 
